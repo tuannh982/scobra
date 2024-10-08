@@ -1,6 +1,15 @@
-Scala argument parser - Cobra-like argument parser
+Simple Scala argument parser
 ===
 
+A Cobra-like argument parser in Scala, aim to be simple
+
+## Why another parser
+We already have scopt as argument parsing library in Scala. But when we use it in the project, 
+it quickly became a mess since all the parser configs is centralized. 
+There are tons of options in the Config class, each argument comes with one validation function, 
+they are all centralized. In a big CLI program, surely it's very unpleasant to read. 
+
+So we write this library as a wrapper of scopt, and taking the code structure of cobra to make this.
 ## Quickstarts
 
 ### Example
