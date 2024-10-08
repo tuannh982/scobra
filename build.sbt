@@ -2,14 +2,14 @@ import Sbt.ProjectExtension
 
 lazy val root = (project in file("."))
   .aggregate(
-    `example`
+    `parser`
   )
   .settings(
-    name := "scala-project-template",
+    name := "scobra",
     publish / skip := true
   )
 
-lazy val `example` = project
+lazy val `parser` = project
   .defaultSettings()
   .withCrossScalaSupports()
 

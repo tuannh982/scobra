@@ -20,6 +20,10 @@ object Dependencies {
   }
 }
 
+object Common {
+  val scoptVersion = "4.1.0"
+}
+
 object Sbt {
 
   implicit class ProjectExtension(project: Project) {
